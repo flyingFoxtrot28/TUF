@@ -13,7 +13,7 @@ function Dashboard({ setBannerData }) {
 
     const updatedBanner = { description, timer, link, is_visible: isVisible };
 
-    axios.post('https://tuf-zd5d.onrender.com', updatedBanner)
+    axios.post('https://tuf-zd5d.onrender.com/api/banner', updatedBanner)
       .then(response => {
         setBannerData(updatedBanner);
         alert('Banner updated successfully!');

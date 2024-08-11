@@ -8,7 +8,7 @@ function App() {
   const [bannerData, setBannerData] = useState(null);
 
   useEffect(() => {
-    axios.get('https://tuf-zd5d.onrender.com')
+    axios.get('https://tuf-zd5d.onrender.com/api/banner')
       .then(response => {
         setBannerData(response.data);
       })
